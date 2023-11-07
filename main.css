@@ -165,7 +165,7 @@ button:hover {
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 762px) {
     body {
         display: block;
         justify-content: center;
