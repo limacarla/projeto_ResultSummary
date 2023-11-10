@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 10%;
+    min-height: 100vh;
+    align-items: center;
 
 }
 
@@ -25,9 +27,15 @@ body {
         margin: 2rem 4.3em;
 }
 
+.circulo {
+    display: inline-block;
+    max-width: 200px;
+    padding-top: 1em;
+}
+
 .sumario-container{
-    height: 53vh;
-    width: 80vh;
+    height: 100%;
+    width: 100%;
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
@@ -71,8 +79,6 @@ body {
     padding-top: 1em;
 }
 
-
-
 .dados > header{
     color: rgb(56, 56, 99);
     margin-bottom: 2em;
@@ -94,8 +100,8 @@ ul li {
     display: inline-flex;
 }
 
-.text p {
-    margin-left: 55px;
+.text  p {
+    margin-left: 55%;
     font-size: 15px;
     color: #2b3c50;
     font-weight: bold;
@@ -117,8 +123,10 @@ ul li {
 .reaction {
     color: hsl(0, 100%, 67%);
     background-color: hsl(0, 100%, 98%);
-    border-radius: 7px 7px;
-    
+}
+
+.reaction p {
+    margin-left: 50px;
 }
 
 .memory {
@@ -174,18 +182,17 @@ button:hover {
         color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (min-width: 350px) and (max-width: 1000px){
+@media screen and (min-width: 400px) and (max-width: 1026px) {
     body {
         display: block;
-        justify-content: center;
         padding: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .sumario-container .resultado .circulo {
-        margin-left: 31%;
-        width: 10rem;
-        height: 10rem;
-    }
+        margin: 2rem auto;
+}
 
     .sumario-container{
         width: 100%;
@@ -202,7 +209,7 @@ button:hover {
     }
 
     .p1 {
-        font-size: 58px;
+        font-size: 60px;
     }
 
     .header-great > p {
@@ -210,49 +217,32 @@ button:hover {
         padding-bottom: 30px;
         max-width: 300px;
     }
+    
 
-    .dados > header{
-        padding-left: 25px;
-        margin-bottom: 2em;
-        margin-top: 0px;
-        margin-left: 1em;
+    .dados > header {
+        margin-left: 3%;
+        margin-top: 5px;
     }
 
-    .reaction, .memory, 
+    .reaction, .memory,
     .verbal, .visual {
-        height: 4.5em;
-        width: 85%;
+        height: 5em;
+        width: 94%;
         padding-top: 15px;
         font-size: 13px;
-        margin-left: 2.5em;
-        margin-bottom: 1.5em;
+        margin-left: 3%;
+        margin-bottom: 4.5%;
     }
 
     .text p {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-left: 8em;
+        position: relative;
+        left: 150px;
     }
-    .verbal p,
-    .visual p {
-        margin-left: 9em;
-    }
-    .memory p {
-        margin-left: 8em;
-    }
-
-
 
     button {
-        width: 85%;
-        height: 2.5em;
+        max-width: 100%;
         margin-top: 0.5em;
-        margin-left: 7.5%;
         font-size: 1.5em;
+        margin-left: 7.4%;
     }
 }
-
-
-
-
-
